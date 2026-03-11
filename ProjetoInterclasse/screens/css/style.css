@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    
+}
+
+header{
+    display: flex;
+}
+
+nav{
+    display: flex;
+}
+
+nav .logo{
+    display: inline;
+}
+
+ul li{
+    text-decoration: none;
+    list-style: none;
+    display: inline;
+    margin: -20vh;
+    padding-left: 70vh;
+}
