@@ -11,96 +11,133 @@
     <title>Interclasse</title>
 </head>
 <body>
+<body>
+ 
+    <!-- ==================== HEADER ==================== -->
     <header>
         <nav>
             <div class="logo">
-                <h1>INTER <span>CLASSE</span></h1>
+                <h1>INTER<span>CLASSE</span></h1>
             </div>
             <ul>
-                <li><a href="">Sobre</a></li>
-                <li><a href="">Horários</a></li>
-                <li><a href="">Turmas</a></li>
-                <li><a href="">Chaves</a></li>
-                <li><a href=""><i class="fas fa-user"></i></a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Horários</a></li>
+                <li><a href="#">Turmas</a></li>
+                <li><a href="#">Vendas</a></li>
+                <li><a href="#">Chaves</a></li>
+                <li><a href="#"><i class="fas fa-user"></i></a></li>
             </ul>
         </nav>
     </header>
-
-    <section>
-        <div class="background-image">
-            <img src="../imgs/Texture.png" alt="" height="350%" width="450%">
-        </div>
-        
-        <div class="side1">
-            <div class="blur"></div>
-            <div class="container-aovivo">
-                <div class="container-line">
-                    <div class="circle"></div>
-                    <div class="text-container">
-                        <p>3 Jogos Hoje</p>
-                    </div>
-                </div>
+ 
+    <!-- ==================== HERO ==================== -->
+    <section class="hero">
+        <!-- Efeitos de fundo -->
+        <div class="hero-texture"></div>
+        <div class="hero-blob"></div>
+ 
+        <!-- Lado esquerdo: título + botões -->
+        <div class="hero-left">
+ 
+            <!-- Badge "3 Jogos Hoje" -->
+            <div class="badge-hoje">
+                <div class="dot"></div>
+                <span>3 Jogos Hoje</span>
             </div>
-
-            <div class="title-container">
-                <div class="title1">INTER</div>
-                <div class="title2">CLASSE</div>
-            </div>
-
-            <div class="title3">ETEC 2026</div>
-
-            <div class="info">
-                O Interclasse da ETEC tá aí! Acompanhe os confrontos, veja o ranking das turmas e torça pela sua!
-            </div>
-
-            <div class="btns">
-                <div class="btn1"><p>SAIBA MAIS</p></div>
-                <div class="btn2"><p>Ver Horários</p></div>
-            </div>
-        </div>
-
- <div class="side2">
-    <div class="games-container">
-        <div class="game-container1">
-            <div class="hour"><p>08:00</p></div>
-            <div class="gameimage"><img src="../imgs/icons/voleibol (1).png" alt="" width="10%"></div>
-            <div class="classtext"><p>1DS X 1ADM</p></div>
-            <div class="gametext">Volêi feminino - Quadra 1</div>
-            <div class="container-aovivo">
-                <div class="container-line">
-                    <div class="circle"></div>
-                    <div class="text-container"><p>Hoje</p></div>
-                </div>
+ 
+            <!-- Título -->
+            <h1 class="hero-title">
+                <span class="t1">INTER</span>
+                <span class="t2">CLASSE</span>
+            </h1>
+ 
+            <!-- Subtítulo -->
+            <div class="hero-sub">ETEC 2026</div>
+ 
+            <!-- Descrição -->
+            <p class="hero-desc">
+                O Interclasse da ETEC tá aí! Acompanhe os confrontos,
+                veja o ranking das turmas e torça pela sua!
+            </p>
+ 
+            <!-- Botões -->
+            <div class="hero-btns">
+                <a href="#" class="btn-primary">Saiba Mais</a>
+                <a href="#" class="btn-secondary">Ver Horários</a>
             </div>
         </div>
-
-        <div class="game-container1">
-            <div class="hour"><p>08:00</p></div>
-            <div class="gameimage"><img src="../imgs/icons/voleibol (1).png" alt="" width="10%"></div>
-            <div class="classtext"><p>1DS X 1ADM</p></div>
-            <div class="gametext">Volêi feminino - Quadra 1</div>
-            <div class="container-aovivo">
-                <div class="container-line">
-                    <div class="circle"></div>
-                    <div class="text-container"><p>Hoje</p></div>
+ 
+        <!-- Lado direito: cards de jogos -->
+        <div class="hero-right">
+ 
+            <!-- Jogo 1 -->
+            <div class="game-card">
+                <div class="gc-hour">08:00</div>
+                <div class="gc-icon">
+                    <img src="../imgs/icons/voleibol.png" alt="Vôlei">
+                </div>
+                <div class="gc-name">1DS X 1ADM</div>
+                <div class="gc-desc">Vôlei Feminino · Quadra 1</div>
+                <div class="gc-badge">
+                    <div class="dot"></div>
+                    <span>Hoje</span>
                 </div>
             </div>
+ 
+            <!-- Jogo 2 -->
+            <div class="game-card">
+                <div class="gc-hour">10:00</div>
+                <div class="gc-icon">
+                    <img src="../imgs/icons/futsal.png" alt="Futsal">
+                </div>
+                <div class="gc-name">2DS X 3ADM</div>
+                <div class="gc-desc">Futsal Masc · Quadra 1</div>
+                <div class="gc-badge">
+                    <div class="dot"></div>
+                    <span>Hoje</span>
+                </div>
+            </div>
+ 
+            <!-- Jogo 3 -->
+            <div class="game-card">
+                <div class="gc-hour">12:00</div>
+                <div class="gc-icon">
+                    <img src="../imgs/icons/xadrez.png" alt="Xadrez">
+                </div>
+                <div class="gc-name">XADREZ</div>
+                <div class="gc-desc">Xadrez Misto · Porão</div>
+                <div class="gc-badge">
+                    <div class="dot"></div>
+                    <span>Hoje</span>
+                </div>
+            </div>
+ 
         </div>
-
-        <div class="game-container1">
-            <div class="hour"><p>08:00</p></div>
-            <div class="gameimage"><img src="../imgs/icons/voleibol (1).png" alt="" width="10%"></div>
-            <div class="classtext"><p>1DS X 1ADM</p></div>
-            <div class="gametext">Volêi feminino - Quadra 1</div>
-            <div class="container-aovivo">
-                <div class="container-line">
-                    <div class="circle"></div>
-                    <div class="text-container"><p>Hoje</p></div>
-                </div>
-            </div>
+    </section>
+ 
+    <!-- ==================== STATS BAR ==================== -->
+    <div class="stats-bar">
+        <div class="stat-item">
+            <span class="stat-value">240</span>
+            <span class="stat-label">Atletas</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-value">6</span>
+            <span class="stat-label">Turmas</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-value">7</span>
+            <span class="stat-label">Modalidades</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-value">50</span>
+            <span class="stat-label">Partidas</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-value">100</span>
+            <span class="stat-label">Pontos</span>
         </div>
     </div>
-</div>
-    </section>
+ 
 </body>
 </html>
