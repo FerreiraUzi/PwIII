@@ -10,134 +10,171 @@
     <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Interclasse</title>
 </head>
-<body>
+
 <body>
  
     <!-- ==================== HEADER ==================== -->
     <header>
         <nav>
-            <div class="logo">
-                <h1>INTER<span>CLASSE</span></h1>
-            </div>
+            <div class="logo"><h1>INTER<span>CLASSE</span></h1></div>
             <ul>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Horários</a></li>
-                <li><a href="#">Turmas</a></li>
-                <li><a href="#">Vendas</a></li>
-                <li><a href="#">Chaves</a></li>
-                <li><a href="#"><i class="fas fa-user"></i></a></li>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#horarios">Horários</a></li>
+                <li><a href="#turmas">Turmas</a></li>
+                <li><a href="#chaves">Chaves</a></li>
+                <li><a href="#" id="openLogin"><i class="fas fa-user"></i></a></li>
             </ul>
         </nav>
     </header>
  
-    <!-- ==================== HERO ==================== -->
-    <section class="hero">
-        <!-- Efeitos de fundo -->
+    <!-- ==================== HOME ==================== -->
+    <section class="hero" id="home">
         <div class="hero-texture"></div>
         <div class="hero-blob"></div>
  
-        <!-- Lado esquerdo: título + botões -->
         <div class="hero-left">
- 
-            <!-- Badge "3 Jogos Hoje" -->
             <div class="badge-hoje">
                 <div class="dot"></div>
                 <span>3 Jogos Hoje</span>
             </div>
- 
-            <!-- Título -->
             <h1 class="hero-title">
                 <span class="t1">INTER</span>
                 <span class="t2">CLASSE</span>
             </h1>
- 
-            <!-- Subtítulo -->
             <div class="hero-sub">ETEC 2026</div>
- 
-            <!-- Descrição -->
             <p class="hero-desc">
                 O Interclasse da ETEC tá aí! Acompanhe os confrontos,
                 veja o ranking das turmas e torça pela sua!
             </p>
- 
-            <!-- Botões -->
             <div class="hero-btns">
-                <a href="#" class="btn-primary">Saiba Mais</a>
-                <a href="#" class="btn-secondary">Ver Horários</a>
+                <a href="#sobre" class="btn-primary">Saiba Mais</a>
+                <a href="#horarios" class="btn-secondary">Ver Horários</a>
             </div>
         </div>
  
-        <!-- Lado direito: cards de jogos -->
         <div class="hero-right">
- 
-            <!-- Jogo 1 -->
             <div class="game-card">
                 <div class="gc-hour">08:00</div>
-                <div class="gc-icon">
-                    <img src="../imgs/icons/voleibol.png" alt="Vôlei">
-                </div>
+                <div class="gc-icon"><img src="../imgs/icons/voleibol.png" alt="Vôlei"></div>
                 <div class="gc-name">1DS X 1ADM</div>
                 <div class="gc-desc">Vôlei Feminino · Quadra 1</div>
-                <div class="gc-badge">
-                    <div class="dot"></div>
-                    <span>Hoje</span>
-                </div>
+                <div class="gc-badge"><div class="dot"></div><span>Hoje</span></div>
             </div>
- 
-            <!-- Jogo 2 -->
             <div class="game-card">
                 <div class="gc-hour">10:00</div>
-                <div class="gc-icon">
-                    <img src="../imgs/icons/futsal.png" alt="Futsal">
-                </div>
+                <div class="gc-icon"><img src="../imgs/icons/futsal.png" alt="Futsal"></div>
                 <div class="gc-name">2DS X 3ADM</div>
                 <div class="gc-desc">Futsal Masc · Quadra 1</div>
-                <div class="gc-badge">
-                    <div class="dot"></div>
-                    <span>Hoje</span>
-                </div>
+                <div class="gc-badge"><div class="dot"></div><span>Hoje</span></div>
             </div>
- 
-            <!-- Jogo 3 -->
             <div class="game-card">
                 <div class="gc-hour">12:00</div>
-                <div class="gc-icon">
-                    <img src="../imgs/icons/xadrez.png" alt="Xadrez">
-                </div>
+                <div class="gc-icon"><img src="../imgs/icons/xadrez.png" alt="Xadrez"></div>
                 <div class="gc-name">XADREZ</div>
                 <div class="gc-desc">Xadrez Misto · Porão</div>
-                <div class="gc-badge">
-                    <div class="dot"></div>
-                    <span>Hoje</span>
-                </div>
+                <div class="gc-badge"><div class="dot"></div><span>Hoje</span></div>
             </div>
- 
         </div>
     </section>
  
     <!-- ==================== STATS BAR ==================== -->
     <div class="stats-bar">
-        <div class="stat-item">
-            <span class="stat-value">240</span>
-            <span class="stat-label">Atletas</span>
+        <div class="stat-item"><span class="stat-value">240</span><span class="stat-label">Atletas</span></div>
+        <div class="stat-item"><span class="stat-value">6</span><span class="stat-label">Turmas</span></div>
+        <div class="stat-item"><span class="stat-value">7</span><span class="stat-label">Modalidades</span></div>
+        <div class="stat-item"><span class="stat-value">50</span><span class="stat-label">Partidas</span></div>
+        <div class="stat-item"><span class="stat-value">100</span><span class="stat-label">Pontos</span></div>
+    </div>
+ 
+    <!-- ==================== SOBRE ==================== -->
+    <section class="sobre-section" id="sobre">
+        <div class="sobre-texture"></div>
+        <div class="sobre-blob"></div>
+ 
+        <div class="section-header">
+            <div class="section-eyebrow">Você precisa saber...</div>
+            <h2 class="section-title">INFORMAÇÕES RELEVANTES</h2>
         </div>
-        <div class="stat-item">
-            <span class="stat-value">6</span>
-            <span class="stat-label">Turmas</span>
+ 
+        <div class="info-card">
+            <div class="info-row">
+                <div class="info-label">Local</div>
+                <div class="info-value">NEUSA GALLETI</div>
+                <div class="info-detail">Rua Borba Gato, 414, São Miguel</div>
+            </div>
+            <div class="info-row">
+                <div class="info-label">Data</div>
+                <div class="info-value">08/06 – 12/06</div>
+                <div class="info-detail">Das 08:00 às 12:00</div>
+            </div>
+            <div class="info-row">
+                <div class="info-label">Equipe</div>
+                <div class="info-value">ENFERMAGEM</div>
+                <div class="info-detail">Das 09:00 às 11:00</div>
+            </div>
+            <div class="gallery">
+                <div class="gallery-item"><img src="../imgs/local/local1.jpeg" alt="Vista aérea"></div>
+                <div class="gallery-item"><img src="../imgs/local/local2.jpeg" alt="Quadra interna"></div>
+                <div class="gallery-item"><img src="../imgs/local/local3.jpg" alt="Mesas de tênis"></div>
+            </div>
         </div>
-        <div class="stat-item">
-            <span class="stat-value">7</span>
-            <span class="stat-label">Modalidades</span>
-        </div>
-        <div class="stat-item">
-            <span class="stat-value">50</span>
-            <span class="stat-label">Partidas</span>
-        </div>
-        <div class="stat-item">
-            <span class="stat-value">100</span>
-            <span class="stat-label">Pontos</span>
+    </section>
+ 
+    <!-- ==================== MODAL LOGIN ==================== -->
+    <div class="modal-overlay" id="loginModal">
+        <div class="modal">
+            <div class="modal-header">
+                <div class="modal-logo">INTER<span>CLASSE</span></div>
+                <div class="modal-subtitle">ETEC Antonio Devisate &mdash; 2026</div>
+                <button class="modal-close" id="closeModal"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-field">
+                    <label>Usuário / RM</label>
+                    <input type="text" placeholder="Digite seu usuário...">
+                </div>
+                <div class="modal-field">
+                    <label>Senha</label>
+                    <input type="password" placeholder="••••••••••••">
+                </div>
+                <div class="modal-role">
+                    <label>Entrar como</label>
+                    <div class="role-toggle">
+                        <button class="role-btn active" id="roleOrg">Organização</button>
+                        <button class="role-btn" id="roleAluno">Aluno</button>
+                    </div>
+                </div>
+                <button class="modal-submit">Entrar</button>
+            </div>
+            <div class="modal-footer">Cadastro? Fale com a Coordenação.</div>
         </div>
     </div>
+ 
+    <script>
+        // Modal
+        const modal     = document.getElementById('loginModal');
+        const openBtn   = document.getElementById('openLogin');
+        const closeBtn  = document.getElementById('closeModal');
+        const roleOrg   = document.getElementById('roleOrg');
+        const roleAluno = document.getElementById('roleAluno');
+ 
+        openBtn.addEventListener('click', (e) => { e.preventDefault(); modal.classList.add('open'); });
+        closeBtn.addEventListener('click', () => modal.classList.remove('open'));
+        modal.addEventListener('click', (e) => { if (e.target === modal) modal.classList.remove('open'); });
+        document.addEventListener('keydown', (e) => { if (e.key === 'Escape') modal.classList.remove('open'); });
+ 
+        roleOrg.addEventListener('click', () => { roleOrg.classList.add('active'); roleAluno.classList.remove('active'); });
+        roleAluno.addEventListener('click', () => { roleAluno.classList.add('active'); roleOrg.classList.remove('active'); });
+ 
+        // Smooth scroll para âncoras do nav
+        document.querySelectorAll('a[href^="#"]').forEach(a => {
+            a.addEventListener('click', e => {
+                const target = document.querySelector(a.getAttribute('href'));
+                if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+            });
+        });
+    </script>
  
 </body>
 </html>
