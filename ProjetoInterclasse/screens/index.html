@@ -266,7 +266,169 @@
             <div class="modal-footer">Cadastro? Fale com a Coordenação.</div>
         </div>
     </div>
-
+    <!-- ==================== CONFRONTOS DO DIA ==================== -->
+    <section class="confrontos-section" id="horarios">
+        <div class="sobre-texture"></div>
+        <div class="sobre-blob"></div>
+ 
+        <!-- Header -->
+        <div class="confrontos-header">
+            <div class="confrontos-titulo">
+                <div class="section-eyebrow">Confrontos do Dia</div>
+                <h2>13/08 — QUINTA FEIRA</h2>
+            </div>
+            <a href="#" class="btn-registrar">
+                <i class="fas fa-plus"></i> Registrar Placar
+            </a>
+        </div>
+ 
+        <!-- Stats do dia -->
+        <div class="confrontos-stats">
+            <div class="conf-stat">
+                <span class="conf-stat-label">Partidas Hoje</span>
+                <span class="conf-stat-value">4</span>
+                <span class="conf-stat-sub">2 Agora · 2 Agendadas</span>
+            </div>
+            <div class="conf-stat">
+                <span class="conf-stat-label">Jogadores Hoje</span>
+                <span class="conf-stat-value">210</span>
+                <span class="conf-stat-sub">Presentes Hoje · 6 Turmas</span>
+            </div>
+            <div class="conf-stat">
+                <span class="conf-stat-label">Modalidades Hoje</span>
+                <span class="conf-stat-value">4</span>
+                <span class="conf-stat-sub">Vôlei Fem/Masc · Futsal · Xadrez</span>
+            </div>
+            <div class="conf-stat">
+                <span class="conf-stat-label">Pontos Hoje</span>
+                <span class="conf-stat-value">59</span>
+                <span class="conf-stat-sub">Vôlei · Futsal · Xadrez</span>
+            </div>
+        </div>
+ 
+        <!-- AO VIVO -->
+        <div class="conf-divider">
+            <span class="conf-divider-label">Ao Vivo</span>
+            <div class="conf-divider-line"></div>
+        </div>
+ 
+        <div class="conf-card ao-vivo">
+            <div class="conf-card-esporte">
+                <div class="conf-card-esporte-topo">
+                    <!-- ícone da modalidade -->
+                    <img src="../imgs/icons/voleibol.png" alt="Vôlei">
+                    <span class="conf-card-esporte-nome">Vôlei Fem</span>
+                </div>
+                <span class="conf-card-hora">08:00</span>
+            </div>
+ 
+            <div class="conf-card-confronto">
+                <!-- Time 1 -->
+                <div class="conf-time">
+                    <div class="conf-time-logo">
+                        <!-- logo da turma -->
+                        <img src="../imgs/times/3ds.png" alt="3DS">
+                    </div>
+                    <span class="conf-time-nome">3DS</span>
+                </div>
+ 
+                <!-- Placar -->
+                <div class="conf-placar">
+                    <span>2</span>
+                    <span class="conf-x">X</span>
+                    <span>1</span>
+                </div>
+ 
+                <!-- Time 2 -->
+                <div class="conf-time">
+                    <span class="conf-time-nome">3ADM</span>
+                    <div class="conf-time-logo">
+                        <img src="../imgs/times/3adm.png" alt="3ADM">
+                    </div>
+                </div>
+            </div>
+ 
+            <div class="conf-card-status">
+                <span class="status-badge ao-vivo">
+                    <span class="dot"></span> Ao Vivo
+                </span>
+            </div>
+        </div>
+ 
+        <!-- EM BREVE -->
+        <div class="conf-divider" style="margin-top: 24px;">
+            <span class="conf-divider-label">Em Breve</span>
+            <div class="conf-divider-line"></div>
+        </div>
+ 
+        <div class="conf-card">
+            <div class="conf-card-esporte">
+                <div class="conf-card-esporte-topo">
+                    <img src="../imgs/icons/xadrez.png" alt="Xadrez">
+                    <span class="conf-card-esporte-nome">Xadrez</span>
+                </div>
+                <span class="conf-card-hora">10:00</span>
+            </div>
+ 
+            <div class="conf-card-confronto">
+                <div class="conf-time">
+                    <div class="conf-time-logo">
+                        <img src="../imgs/times/3ds.png" alt="3DS">
+                    </div>
+                    <span class="conf-time-nome">3DS</span>
+                </div>
+ 
+                <div class="conf-placar">
+                    <span class="conf-x" style="font-size: 1.2rem; letter-spacing: 4px;">VS</span>
+                </div>
+ 
+                <div class="conf-time">
+                    <span class="conf-time-nome">3ADM</span>
+                    <div class="conf-time-logo">
+                        <img src="../imgs/times/3adm.png" alt="3ADM">
+                    </div>
+                </div>
+            </div>
+ 
+            <div class="conf-card-status">
+                <span class="status-badge em-breve">
+                    <span class="dot"></span> 10:00 H
+                </span>
+            </div>
+        </div>
+ 
+    </section>
+ 
+    <!-- ==================== MODAL LOGIN ==================== -->
+    <div class="modal-overlay" id="loginModal">
+        <div class="modal">
+            <div class="modal-header">
+                <div class="modal-logo">INTER<span>CLASSE</span></div>
+                <div class="modal-subtitle">ETEC Antonio Devisate &mdash; 2026</div>
+                <button class="modal-close" id="closeModal"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-field">
+                    <label>Usuário / RM</label>
+                    <input type="text" placeholder="Digite seu usuário...">
+                </div>
+                <div class="modal-field">
+                    <label>Senha</label>
+                    <input type="password" placeholder="••••••••••••">
+                </div>
+                <div class="modal-role">
+                    <label>Entrar como</label>
+                    <div class="role-toggle">
+                        <button class="role-btn active" id="roleOrg">Organização</button>
+                        <button class="role-btn" id="roleAluno">Aluno</button>
+                    </div>
+                </div>
+                <button class="modal-submit">Entrar</button>
+            </div>
+            <div class="modal-footer">Cadastro? Fale com a Coordenação.</div>
+        </div>
+    </div>
+ 
     <script>
         // Modal
         const modal     = document.getElementById('loginModal');
@@ -283,7 +445,7 @@
         roleOrg.addEventListener('click', () => { roleOrg.classList.add('active'); roleAluno.classList.remove('active'); });
         roleAluno.addEventListener('click', () => { roleAluno.classList.add('active'); roleOrg.classList.remove('active'); });
  
-        // Smooth scroll
+        // Smooth scroll para âncoras do nav
         document.querySelectorAll('a[href^="#"]').forEach(a => {
             a.addEventListener('click', e => {
                 const target = document.querySelector(a.getAttribute('href'));
@@ -291,6 +453,3 @@
             });
         });
     </script>
-
-</body>
-</html>
