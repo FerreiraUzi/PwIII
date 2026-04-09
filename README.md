@@ -35,14 +35,16 @@ Além disso, o sistema inclui um modal de login, permitindo que organizadores te
 ├── 📁fontes<br>
 │   └── 📁Champ<br>
 │   └── 📁HighJersey<br>
+│<br>
 ├── 📁imgs<br>
 │   └── 📁icons<br>
 │   └── 📁local<br>
 │   └── 📁times<br>
 │   └── 📄texture.png<br>
+│<br>
 ├── 📁screens<br>
 │   ├── 📁css<br>
-│   ├── 📄index.htm<br>l 
+│   ├── 📄index.htm<br>
 
 Seções do Site
 
