@@ -30,19 +30,19 @@ Além disso, o sistema inclui um modal de login, permitindo que organizadores te
 
 <h2>Estrutura do Projeto</h2>
 
-📁ProjetoInterclasse
-│
-├── 📁fontes
-│   └── 📁Champ
-│   └── 📁HighJersey
-├── 📁imgs
-│   └── 📁icons
-│   └── 📁local
-│   └── 📁times
-│   └── 📄texture.png
-├── 📁screens
-│   ├── 📁css
-│   ├── 📄index.html 
+📁ProjetoInterclasse<br>
+│<br>
+├── 📁fontes<br>
+│   └── 📁Champ<br>
+│   └── 📁HighJersey<br>
+├── 📁imgs<br>
+│   └── 📁icons<br>
+│   └── 📁local<br>
+│   └── 📁times<br>
+│   └── 📄texture.png<br>
+├── 📁screens<br>
+│   ├── 📁css<br>
+│   ├── 📄index.htm<br>l 
 
 Seções do Site
 
