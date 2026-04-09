@@ -26,7 +26,6 @@ O objetivo do site é centralizar as informações do interclasse em uma única 
 
 Além disso, o sistema inclui um modal de login, permitindo que organizadores tenham acesso a funções administrativas, como registrar placares.
 
-<br>
 
 <h2>Estrutura do Projeto</h2>
 
@@ -44,8 +43,8 @@ Além disso, o sistema inclui um modal de login, permitindo que organizadores te
 │<br>
 ├── 📁screens<br>
 │   └── 📁css<br>
-        └── 📄style.css
-│   └── 📄index.htm<br>
+│      &nbsp;&nbsp;&nbsp;&nbsp;└── 📄style.css<br>
+│   └── 📄index.htm<br><br>
 
 Seções do Site
 
