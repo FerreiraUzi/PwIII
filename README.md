@@ -21,3 +21,4 @@ O objetivo do site é centralizar as informações do interclasse em uma única 
 <br>
 
 Além disso, o sistema inclui um modal de login, permitindo que organizadores tenham acesso a funções administrativas, como registrar placares.
+
