@@ -43,8 +43,9 @@ Além disso, o sistema inclui um modal de login, permitindo que organizadores te
 │   └── 📄texture.png<br>
 │<br>
 ├── 📁screens<br>
-│   ├── 📁css<br>
-│   ├── 📄index.htm<br>
+│   └── 📁css<br>
+        └── 📄style.css
+│   └── 📄index.htm<br>
 
 Seções do Site
 
