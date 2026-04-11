@@ -479,7 +479,7 @@ nav ul li a:hover {
         }
 
         .section-title {
-            font-family: 'Archivo Narrow', sans-serif;
+            font-family: 'Championship', sans-serif;
             font-size: clamp(36px, 6vw, 72px);
             color: var(--color-white);
             line-height: 1;
@@ -681,7 +681,7 @@ nav ul li a:hover {
 
         /* Título */
         .modalidade-title {
-            font-family: 'Archivo Narrow', sans-serif;
+            font-family: 'Championship', sans-serif;
             font-size: 1.6rem;
             font-weight: 700;
             letter-spacing: 2px;
@@ -782,7 +782,7 @@ nav ul li a:hover {
         }
 
         .confrontos-titulo h2 {
-            font-family: 'Archivo Narrow', sans-serif;
+            font-family: 'Championship', sans-serif;
             font-size: clamp(28px, 4vw, 52px);
             color: var(--white);
             letter-spacing: 2px;
@@ -898,7 +898,7 @@ nav ul li a:hover {
         }
 
         .conf-card:hover { 
-            border-color: var(--border-strong); 
+            border-color: var(--color-red); 
         }
 
         .conf-card.ao-vivo { 
@@ -952,6 +952,21 @@ nav ul li a:hover {
             padding: 20px 32px;
             flex: 1;
             flex-wrap: wrap;
+        }
+
+        .conf-card-confronto::before {
+            content: '';
+            position: absolute;
+            top: -100%;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(169, 16, 16, 0.08), transparent);
+            transition: top .4s ease;
+        }
+
+        .conf-card:hover .conf-card-confronto::before {
+            top: 100%;
         }
 
         .conf-time {
@@ -1265,6 +1280,207 @@ nav ul li a:hover {
             font-size: 0.75rem;
             color: rgba(245, 245, 245, 0.4);
             font-family: 'Archivo Narrow', sans-serif;
+        }
+
+
+                /* ============================================
+           CALENDÁRIO DE JOGOS
+           ============================================ */
+        .calendario-section {
+            position: relative;
+            min-height: 100vh;
+            padding: 100px 64px 80px;
+            overflow: hidden;
+        }
+ 
+        .calendario-section .sobre-texture { opacity: 0.06; }
+ 
+        .calendario-header {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            position: relative;
+            z-index: 2;
+        }
+ 
+        .btn-agendar {
+            display: inline-flex; align-items: center; gap: 8px;
+            padding: 12px 22px;
+            background: rgba(130,0,0,0.48);
+            border: 1.8px solid var(--color-red-button);
+            border-radius: 8px;
+            color: var(--color-white);
+            font-family: 'Archivo Narrow', sans-serif;
+            font-size: 0.85rem; font-weight: 700;
+            letter-spacing: 2px; text-transform: uppercase;
+            cursor: pointer; text-decoration: none;
+            transition: background 0.2s, transform 0.2s;
+        }
+        .btn-agendar:hover { background: rgba(160,0,0,0.6); transform: scale(1.03); color: var(--color-white); }
+ 
+        /* ---- ABAS DE DATA ---- */
+        .dias-tabs {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 36px;
+            position: relative;
+            z-index: 2;
+            flex-wrap: wrap;
+        }
+ 
+        .dia-tab {
+            display: flex; flex-direction: column; align-items: center;
+            padding: 16px 24px;
+            background: var(--color-dark-gray);
+            border: 1px solid var(--border-light);
+            border-radius: 10px;
+            cursor: pointer;
+            min-width: 120px;
+            transition: border-color 0.2s, background 0.2s;
+            user-select: none;
+        }
+        .dia-tab:hover { border-color: var(--border-medium); }
+        .dia-tab.active { border-color: var(--color-red); background: rgba(169,16,16,0.08); }
+ 
+        .dia-tab .tab-label { font-size: 0.6rem; text-transform: uppercase; letter-spacing: 2px; color: rgba(245,245,245,0.35); font-family: 'Archivo Narrow', sans-serif; margin-bottom: 4px; }
+        .dia-tab .tab-num   { font-family: 'Archivo Narrow', sans-serif; font-size: 1.9rem; font-weight: 700; color: var(--color-white); line-height: 1; }
+        .dia-tab .tab-status{ font-size: 0.58rem; text-transform: uppercase; letter-spacing: 1px; color: rgba(245,245,245,0.3); font-family: 'Archivo Narrow', sans-serif; margin-top: 4px; }
+        .dia-tab.active .tab-num    { color: var(--color-red); }
+        .dia-tab.active .tab-status { color: rgba(169,16,16,0.8); }
+ 
+        /* ---- CORPO: lista + detalhe ---- */
+        .cal-body {
+            display: grid;
+            grid-template-columns: 240px 1fr;
+            gap: 16px;
+            position: relative;
+            z-index: 2;
+            min-height: 340px;
+        }
+ 
+        /* Lista de partidas */
+        .cal-lista {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+ 
+        .cal-item {
+            display: flex; align-items: center; gap: 12px;
+            padding: 14px 16px;
+            background: var(--color-dark-gray);
+            border: 1px solid var(--border-light);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: border-color 0.2s, background 0.2s;
+            user-select: none;
+        }
+        .cal-item:hover  { border-color: var(--border-medium); }
+        .cal-item.active { border-color: var(--color-red); background: rgba(169,16,16,0.08); }
+ 
+        .cal-item-icon { width: 26px; height: 26px; object-fit: contain; opacity: 0.85; flex-shrink: 0; }
+ 
+        .cal-item-info { display: flex; flex-direction: column; gap: 2px; }
+        .cal-item-nome { font-family: 'Archivo Narrow', sans-serif; font-size: 0.82rem; font-weight: 700; letter-spacing: 1px; color: var(--color-white); text-transform: uppercase; }
+        .cal-item-hora { font-size: 0.65rem; letter-spacing: 1px; color: var(--color-red); font-family: 'Archivo Narrow', sans-serif; text-transform: uppercase; }
+ 
+        /* Detalhe da partida */
+        .cal-detalhe {
+            background: var(--color-dark-gray);
+            border: 1px solid var(--border-medium);
+            border-radius: 12px;
+            padding: 32px 36px;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            transition: opacity 0.2s;
+        }
+ 
+        .cal-detalhe.hidden { opacity: 0; pointer-events: none; }
+ 
+        /* Topo do detalhe */
+        .cal-det-topo {
+            display: flex; align-items: center; gap: 12px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--border-light);
+        }
+        .cal-det-topo img { width: 28px; height: 28px; object-fit: contain; opacity: 0.85; }
+        .cal-det-modalidade { font-family: 'Archivo Narrow', sans-serif; font-size: 0.78rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: rgba(245,245,245,0.5); }
+        .cal-det-hora { font-family: 'Archivo Narrow', sans-serif; font-size: 0.78rem; color: var(--color-red); letter-spacing: 1px; margin-left: auto; }
+ 
+        /* Placar / Times */
+        .cal-det-placar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 28px;
+        }
+ 
+        .cal-det-time {
+            display: flex; flex-direction: column; align-items: center; gap: 10px;
+            flex: 1;
+        }
+        .cal-det-logo {
+            width: 68px; height: 68px;
+            border-radius: 50%;
+            border: 2px solid var(--border-light);
+            background: var(--color-primary, #121111);
+            overflow: hidden;
+            display: flex; align-items: center; justify-content: center;
+        }
+        .cal-det-logo img { width: 100%; height: 100%; object-fit: cover; }
+        .cal-det-nome  { font-family: 'Archivo Narrow', sans-serif; font-size: 1.5rem; font-weight: 700; color: var(--color-white); letter-spacing: 3px; }
+        .cal-det-turma { font-size: 0.62rem; text-transform: uppercase; letter-spacing: 1px; color: rgba(245,245,245,0.35); font-family: 'Archivo Narrow', sans-serif; text-align: center; }
+ 
+        .cal-det-score {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            flex: 0 0 140px;
+        }
+        .cal-det-score-num { font-family: 'Archivo Narrow', sans-serif; font-size: 3rem; font-weight: 700; color: var(--color-white); letter-spacing: 2px; line-height: 1; }
+        .cal-det-score-vs  { font-size: 1rem; text-transform: uppercase; letter-spacing: 3px; color: rgba(245,245,245,0.25); font-family: 'Archivo Narrow', sans-serif; font-weight: 700; }
+ 
+        /* Info grid */
+        .cal-det-info {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+        .cal-det-info-item {
+            background: #121111;
+            border: 1px solid var(--border-light);
+            border-radius: 8px;
+            padding: 12px 14px;
+            display: flex; flex-direction: column; gap: 4px;
+        }
+        .cal-det-info-label { font-size: 0.58rem; text-transform: uppercase; letter-spacing: 2px; color: rgba(245,245,245,0.3); font-family: 'Archivo Narrow', sans-serif; }
+        .cal-det-info-value { font-family: 'Archivo Narrow', sans-serif; font-size: 0.9rem; font-weight: 700; color: var(--color-white); letter-spacing: 1px; }
+ 
+        /* Placeholder vazio */
+        .cal-empty {
+            display: flex; align-items: center; justify-content: center;
+            height: 100%;
+            color: rgba(245,245,245,0.2);
+            font-family: 'Archivo Narrow', sans-serif;
+            font-size: 0.85rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            border: 1px dashed var(--border-light);
+            border-radius: 12px;
+        }
+ 
+        @media (max-width: 900px) {
+            .calendario-section { padding: 100px 32px 60px; }
+            .cal-body { grid-template-columns: 1fr; }
+        }
+        @media (max-width: 600px) {
+            .calendario-section { padding: 100px 20px 60px; }
+            .cal-det-info { grid-template-columns: repeat(2,1fr); }
+            .cal-det-placar { gap: 16px; }
         }
 
         /* ============================================
