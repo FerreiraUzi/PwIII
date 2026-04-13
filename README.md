@@ -46,5 +46,9 @@ Além disso, o sistema inclui um modal de login, permitindo que organizadores te
 │      &nbsp;&nbsp;&nbsp;&nbsp;└── 📄style.css<br>
 │   └── 📄index.htm<br><br>
 
-Seções do Site
+<h2>Seções do Site</h2>
 
+<h3>Home</h3>
+Sobre
+Modalidades
+Confrontos do dia
