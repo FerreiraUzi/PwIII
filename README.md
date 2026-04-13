@@ -49,6 +49,16 @@ Além disso, o sistema inclui um modal de login, permitindo que organizadores te
 <h2>Seções do Site</h2>
 
 <h3>Home</h3>
-Sobre
-Modalidades
-Confrontos do dia
+<h3>Sobre</h3>
+
+Essa parte do site apresenta informações importantes sobre o interclasse.
+
+Entre os dados exibidos estão:
+
+Local onde ocorrerão os jogos
+Datas do evento
+Equipe responsável pela organização
+
+Também existe uma galeria de imagens, mostrando fotos do local onde o evento será realizado.
+<h3>Modalidades</h3>
+<h3>Confrontos do dia</h3>
