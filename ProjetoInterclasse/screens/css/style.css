@@ -1587,3 +1587,149 @@ nav ul li a:hover {
                 order: 2;
             }
         }
+
+                /* ============================================
+           TURMAS
+           ============================================ */
+
+        .turmas-section {
+            position: relative;
+            min-height: 100vh;
+            padding: 100px 64px 80px;
+            overflow: hidden;
+        }
+ 
+        .turmas-section .sobre-texture { opacity: 0.06; }
+ 
+        .turmas-header {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            position: relative;
+            z-index: 2;
+        }
+ 
+        /* ---- barra de pesquisa ---- */
+
+                .turmas-search {
+            position: relative;
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .turmas-search input {
+            width: 100%;
+            padding: 12px 45px 12px 40px;
+            border-radius: 12px;
+            border: 1px solid #2a2a2a;
+            background-color: #1c1c1c;
+            color: #fff;
+            font-size: 14px;
+            outline: none;
+        }
+
+        .turmas-search input::placeholder {
+            color: #888;
+        }
+
+        .turmas-search input:focus {
+            border-color: var(--color-red-button);
+            box-shadow:
+            0 6px 24px rgba(169,16,16,0.08),   
+            inset 0 0 8px rgba(169,16,16,0.03); 
+            transform: translateY(-2px);
+        }
+
+        .turmas-search button {
+            position: absolute;
+            top: 50%;
+            left: 12px;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            color: #888;
+            cursor: pointer;
+            font-size: 14px;
+            padding: 0;
+        }
+
+/* ---- cards de turmas ---- */
+
+.cards {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    width: 180px;
+    padding: 16px;
+    margin-top: 40px;
+    border-radius: 12px;
+    background: #121212;
+    border: 1px solid #2a2a2a;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+/* topo com ícone */
+.card .icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #1f1f1f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 10px;
+}
+
+/* número no canto */
+.card .level {
+    position: absolute;
+    top: 50px;
+    right: 12px;
+    font-size: 22px;
+    color: #555;
+    font-weight: bold;
+}
+
+/* título principal */
+.card h2 {
+    font-size: 28px;
+    margin: 5px 0;
+    letter-spacing: 1px;
+}
+
+/* subtítulo */
+.card .subtitle {
+    font-size: 10px;
+    color: #aaa;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+/* linha */
+.card hr {
+    border: none;
+    border-top: 1px solid #2a2a2a;
+    margin: 10px 0;
+}
+
+/* rodapé */
+.card .footer {
+    font-size: 10px;
+    color: #ccc;
+    text-align: center;
+    border: 1px solid #2a2a2a;
+    border-radius: 20px;
+    padding: 4px;
+}
