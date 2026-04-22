@@ -1668,10 +1668,12 @@ nav ul li a:hover {
 .cards {
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
+
 }
 
 .card {
-    display: block; /* necessário para <a class="card"> */
+    display: block; 
     width: 180px;
     padding: 16px;
     margin-top: 40px;
@@ -1683,8 +1685,8 @@ nav ul li a:hover {
     overflow: hidden;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     text-align: center;
-    text-decoration: none; /* remove underline */
-    color: inherit; /* preserva cor do texto */
+    text-decoration: none; 
+    color: inherit;
 }
 
 .card:focus,
@@ -1781,3 +1783,6 @@ nav ul li a:hover {
     color: #555;
     font-weight: bold;
 }
+
+/*INFO*/
+
