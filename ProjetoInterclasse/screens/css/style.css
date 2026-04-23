@@ -1709,6 +1709,10 @@ nav ul li a:hover {
     margin: 0 auto 10px;
 }
 
+.card .icon img{
+    border-radius: 360%;
+}
+
 /* número no canto */
 .card .level {
     position: absolute;
